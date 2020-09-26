@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "skin_concerns",
   "info": {
-    "name": "category"
+    "name": "Skin Concern"
   },
   "options": {
     "increments": true,
@@ -10,12 +10,11 @@
   },
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "products": {
-      "via": "categories",
-      "collection": "product"
+      "collection": "product",
+      "via": "skin_concern"
     }
   }
 }

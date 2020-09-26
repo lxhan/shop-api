@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/skin-types",
+      "handler": "skin-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/skin-types/count",
+      "handler": "skin-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/skin-types/:id",
+      "handler": "skin-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/skin-types",
+      "handler": "skin-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/skin-types/:id",
+      "handler": "skin-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/skin-types/:id",
+      "handler": "skin-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

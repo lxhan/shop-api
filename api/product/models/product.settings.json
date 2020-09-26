@@ -18,7 +18,8 @@
       "required": true
     },
     "price": {
-      "type": "float"
+      "type": "float",
+      "required": true
     },
     "image": {
       "collection": "file",
@@ -30,6 +31,27 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "categories": {
+      "collection": "category",
+      "via": "products",
+      "dominant": true
+    },
+    "variation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.variation"
+    },
+    "stock": {
+      "type": "integer"
+    },
+    "skin_type": {
+      "via": "products",
+      "model": "skin-type"
+    },
+    "skin_concern": {
+      "via": "products",
+      "model": "skin-concern"
     }
   }
 }

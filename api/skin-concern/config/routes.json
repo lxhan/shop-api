@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/skin-concerns",
+      "handler": "skin-concern.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/skin-concerns/count",
+      "handler": "skin-concern.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/skin-concerns/:id",
+      "handler": "skin-concern.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/skin-concerns",
+      "handler": "skin-concern.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/skin-concerns/:id",
+      "handler": "skin-concern.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/skin-concerns/:id",
+      "handler": "skin-concern.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

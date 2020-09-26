@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_customers_addresses",
+  "info": {
+    "name": "address",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "text"
+    },
+    "address_add": {
+      "type": "text"
+    },
+    "zip": {
+      "type": "integer"
+    }
+  }
+}
